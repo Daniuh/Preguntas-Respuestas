@@ -1,0 +1,354 @@
+{
+    "preguntas" : [
+        {
+            "id" : 1,
+            "tipo" : "historiaygeografia",
+            "pregunta" : "¿Cuál es el río más largo del mundo?",
+            "opciones" : ["Nilo", "Misisipi", "Amazonas", "Yangtsé"],
+            "respuesta" : 2
+        },
+        {
+            "id" : 2,
+            "tipo" : "historiaygeografia",
+            "pregunta" : "¿En qué año se descubrió América?",
+            "opciones" : ["1492", "1644", "1500", "1443"],
+            "respuesta" : 0
+        },
+        {
+            "id" : 3,
+            "tipo" : "historiaygeografia",
+            "pregunta" : "¿Qué país tiene forma de bota?",
+            "opciones" : ["España", "Italia", "Portugal", "Colombia"],
+            "respuesta" : 1
+        },
+        {
+            "id" : 4,
+            "tipo" : "historiaygeografia",
+            "pregunta" : "¿Quién fue el primer presidente de Estados Unidos?",
+            "opciones" : ["Abraham Lincoln", "Thomas Jefferson", "George Washington", "John Adams"],
+            "respuesta" : 2
+        },
+        {
+           "id" : 5,
+            "tipo" : "historiaygeografia",
+            "pregunta" : "¿Cuál es la capital de Australia?",
+            "opciones" : ["Sídney", "Melbourne", "Canberra", "Brisbane"],
+            "respuesta" : 2 
+        },
+        {
+           "id" : 6,
+            "tipo" : "historiaygeografia",
+            "pregunta" : "¿Qué civilización construyó las pirámides de Giza?",
+            "opciones" : ["Romana", "Griega", "Egipcia", "Maya"],
+            "respuesta" : 2 
+        },
+        {
+           "id" : 7,
+            "tipo" : "historiaygeografia",
+            "pregunta" : "¿En qué continente se encuentra el desierto del Sahara?",
+            "opciones" : ["Asia", "América", "Oceanía", "África"],
+            "respuesta" : 3 
+        },
+        {
+           "id" : 8,
+            "tipo" : "historiaygeografia",
+            "pregunta" : "¿Qué guerra terminó en 1945?",
+            "opciones" : ["Primera Guerra Mundial", "Guerra Fría", "Guerra de Vietnam", "Segunda Guerra Mundial"],
+            "respuesta" : 3 
+        },
+        {
+           "id" : 9,
+            "tipo" : "historiaygeografia",
+            "pregunta" : "¿Cuál es el océano más grande del mundo?",
+            "opciones" : ["Pacífico", "Atlántico", "Índico", "Ártico"],
+            "respuesta" : 0 
+        },
+        {
+           "id" : 10,
+            "tipo" : "historiaygeografia",
+            "pregunta" : "¿Quién fue conocida como la Dama de Hierro?",
+            "opciones" : ["Angela Merkel", "Margaret Thatcher", "Indira Gandhi", "Reina Isabel II"],
+            "respuesta" : 1 
+        },
+        {
+           "id" : 11,
+            "tipo" : "cienciaynaturaleza",
+            "pregunta" : "¿Cuál es el símbolo químico del oro?",
+            "opciones" : ["Or", "Ag", "Fe", "Au"],
+            "respuesta" : 3 
+        },
+        {
+           "id" : 12,
+            "tipo" : "cienciaynaturaleza",
+            "pregunta" : "¿Qué planeta es conocido como el planeta rojo?",
+            "opciones" : ["Júpiter", "Marte", "Venus", "Satuno"],
+            "respuesta" : 1 
+        },
+        {
+           "id" : 13,
+            "tipo" : "cienciaynaturaleza",
+            "pregunta" : "¿Cuál es el animal terrestre más rápido?",
+            "opciones" : ["León", "Avestruz", "Guepardo", "Caballo"],
+            "respuesta" : 2
+        },
+        {
+           "id" : 14,
+            "tipo" : "cienciaynaturaleza",
+            "pregunta" : "¿Qué órgano humano consume más energía?",
+            "opciones" : ["Corazón", "Cerebro", "Hígado", "Pulmones"],
+            "respuesta" : 1
+        },
+        {
+           "id" : 15,
+            "tipo" : "cienciaynaturaleza",
+            "pregunta" : "¿Qué gas respiramos principalmente?",
+            "opciones" : ["Oxígeno", "Dióxido de Carbono", "Nitrógeno", "Hidrógeno"],
+            "respuesta" : 2
+        },
+        {
+           "id" : 16,
+            "tipo" : "cienciaynaturaleza",
+            "pregunta" : "¿Cuántos huesos tiene el cuerpo humano adulto?",
+            "opciones" : ["206", "200", "210", "204"],
+            "respuesta" : 0
+        },
+        {
+           "id" : 17,
+            "tipo" : "cienciaynaturaleza",
+            "pregunta" : "¿Cuál es la fórmula del agua?",
+            "opciones" : ["CO2", "H2O", "HO2", "O2H"],
+            "respuesta" : 1
+        },
+        {
+           "id" : 18,
+            "tipo" : "cienciaynaturaleza",
+            "pregunta" : "¿Qué fuerza nos mantiene en la tierra?",
+            "opciones" : ["Magnetismo", "Fricción", "Gravedad", "Inercia"],
+            "respuesta" : 2
+        },
+        {
+           "id" : 19,
+            "tipo" : "cienciaynaturaleza",
+            "pregunta" : "¿Qué estudian los bótanicos?",
+            "opciones" : ["Animales", "Rocas", "Estrellas", "Plantas"],
+            "respuesta" : 3
+        },
+        {
+           "id" : 20,
+            "tipo" : "cienciaynaturaleza",
+            "pregunta" : "¿Quién formuló la teoría de la relatividad?",
+            "opciones" : ["Isaac Newton", "Albert Einstein", "Nikola Tesla", "Stephen Hawking"],
+            "respuesta" : 3
+        },
+        {
+           "id" : 21,
+            "tipo" : "arteyliteratura",
+            "pregunta" : "¿Quién pintó la Mona Lisa?",
+            "opciones" : ["Miguel Ángel", "Leonardo da Vinci", "Rafael", "Donatello"],
+            "respuesta" : 1
+        },
+        {
+           "id" : 22,
+            "tipo" : "arteyliteratura",
+            "pregunta" : "¿Cuál es el libro más vendido después de la Biblia?",
+            "opciones" : ["El Quijote", "Harry Potter", "El Principito", "Odisea"],
+            "respuesta" : 0
+        },
+        {
+           "id" : 23,
+            "tipo" : "arteyliteratura",
+            "pregunta" : "¿Quién escribió Romeo y Julieta?",
+            "opciones" : ["Cervantes", "Víctor Hugo", "William Shakespeare", "Dante Alighieri"],
+            "respuesta" : 2
+        },
+        {
+           "id" : 24,
+            "tipo" : "arteyliteratura",
+            "pregunta" : "¿A qué país pertenece el baile del Flamenco?",
+            "opciones" : ["México", "Argentina", "España", "Colombia"],
+            "respuesta" : 2
+        },
+        {
+           "id" : 25,
+            "tipo" : "arteyliteratura",
+            "pregunta" : "¿Cuál es el instrumento de cuerdas más pequeño de la orquesta?",
+            "opciones" : ["Viola", "Violonchelo", "Arpa", "Violín"],
+            "respuesta" : 3
+        },
+        {
+           "id" : 26,
+            "tipo" : "arteyliteratura",
+            "pregunta" : "¿Quién pintó La noche estrellada?",
+            "opciones" : ["Pablo Picasso", "Salvador Dalí", "Vincent van Gogh", "Claude Monet"],
+            "respuesta" : 2
+        },
+        {
+           "id" : 27,
+            "tipo" : "arteyliteratura",
+            "pregunta" : "¿En qué ciudad se encuentra el Museo del Louvre?",
+            "opciones" : ["Londres", "Salvador Madrid", "París", "Roma"],
+            "respuesta" : 2
+        },
+        {
+           "id" : 28,
+            "tipo" : "arteyliteratura",
+            "pregunta" : "¿Qué personaje famoso vive en el 221B de Baker Street?",
+            "opciones" : ["Sherlock Holmes", "Harry Potter", "James Bond", "Hércules Poirot"],
+            "respuesta" : 0
+        },
+        {
+           "id" : 29,
+            "tipo" : "arteyliteratura",
+            "pregunta" : "¿Cómo se llama el hidalgo protagonista de la obra de Cervantes?",
+            "opciones" : ["El Cid", "Don Quijote", "Don Juan", "Sancho Panza"],
+            "respuesta" : 1
+        },
+        {
+           "id" : 30,
+            "tipo" : "arteyliteratura",
+            "pregunta" : "¿Quién es el autor de Cien años de soledad?",
+            "opciones" : ["Mario Vargas Llosa", "Pablo Neruda", "Isabel Allende", "Gabriel García Márquez"],
+            "respuesta" : 3
+        },
+        {
+           "id" : 31,
+            "tipo" : "deportesyentretenimiento",
+            "pregunta" : "¿Cada cuántos años se celebran los Juegos Olímpicos?",
+            "opciones" : ["2 años", "4 años", "5 años", "6 años"],
+            "respuesta" : 1
+        },
+        {
+           "id" : 32,
+            "tipo" : "deportesyentretenimiento",
+            "pregunta" : "¿Cuál es el deporte más popular del mundo?",
+            "opciones" : ["Fútbol", "Baloncesto", "Tenis", "Béisbol"],
+            "respuesta" : 0
+        },
+        {
+           "id" : 33,
+            "tipo" : "deportesyentretenimiento",
+            "pregunta" : "¿Quién es conocido como El Rey del Pop?",
+            "opciones" : ["Elvis Presley", "Freddie Mercury", "Michael Jackson", "Justin Timberlake"],
+            "respuesta" : 2
+        },
+        {
+           "id" : 34,
+            "tipo" : "deportesyentretenimiento",
+            "pregunta" : "¿En qué país se originaron los Juegos Olímpicos?",
+            "opciones" : ["Grecia", "Italia", "EE.UU", "Egipto"],
+            "respuesta" : 0
+        },
+        {
+           "id" : 35,
+            "tipo" : "deportesyentretenimiento",
+            "pregunta" : "¿Qué superhéroe es conocido como el Hombre de Acero?",
+            "opciones" : ["Batman", "Superman", "Iron Man", "Hulk"],
+            "respuesta" : 1
+        },
+        {
+           "id" : 36,
+            "tipo" : "deportesyentretenimiento",
+            "pregunta" : "¿Cuántos jugadores hay en un equipo de fútbol en el campo?",
+            "opciones" : ["9", "21", "14", "11"],
+            "respuesta" : 3
+        },
+        {
+           "id" : 37,
+            "tipo" : "deportesyentretenimiento",
+            "pregunta" : "¿Qué empresa creó el iPhone?",
+            "opciones" : ["Samsung", "Xiaomi", "Apple", "Google"],
+            "respuesta" : 2
+        },
+        {
+           "id" : 38,
+            "tipo" : "deportesyentretenimiento",
+            "pregunta" : "¿Cuál es el color de las esmeraldas?",
+            "opciones" : ["Azul", "Verde", "Amarillo", "Rojo"],
+            "respuesta" : 1
+        },
+        {
+           "id" : 39,
+            "tipo" : "deportesyentretenimiento",
+            "pregunta" : "¿Cómo se llama el ratón más famoso de Disney?",
+            "opciones" : ["Mickey", "Jerry", "Speedy Gonzáles", "Stuart Little"],
+            "respuesta" : 0
+        },
+        {
+           "id" : 40,
+            "tipo" : "deportesyentretenimiento",
+            "pregunta" : "¿En qué ciudad se entregan los premios Oscar?",
+            "opciones" : ["Nueva York", "Los Ángeles", "Chicago", "Bogotá"],
+            "respuesta" : 1
+        },
+        {
+           "id" : 41,
+            "tipo" : "culturageneralvariada",
+            "pregunta" : "¿Cuál es la moneda oficial de la Unión Europea?",
+            "opciones" : ["Dólar", "Libra", "Euro", "Franco"],
+            "respuesta" : 2
+        },
+        {
+           "id" : 42,
+            "tipo" : "culturageneralvariada",
+            "pregunta" : "¿Qué idioma es el más hablado en el mundo (nativos)?",
+            "opciones" : ["Chino Mandarín", "Inglés", "Español", "Hindi"],
+            "respuesta" : 0
+        },
+        {
+           "id" : 43,
+            "tipo" : "culturageneralvariada",
+            "pregunta" : "¿Cuál es el primer mes del año?",
+            "opciones" : ["Febrero", "Marzo", "Enero", "Diciembre"],
+            "respuesta" : 2
+        },
+        {
+           "id" : 44,
+            "tipo" : "culturageneralvariada",
+            "pregunta" : "¿A cuántos grados centígrados hierve el agua?",
+            "opciones" : ["50ºC", "120ºC", "90ºC", "100ºC"],
+            "respuesta" : 3
+        },
+        {
+           "id" : 45,
+            "tipo" : "culturageneralvariada",
+            "pregunta" : "¿Qué animal es el mejor amigo del hombre?",
+            "opciones" : ["Perro", "Gato", "Caballo", "Hámster"],
+            "respuesta" : 0
+        },
+        {
+           "id" : 46,
+            "tipo" : "culturageneralvariada",
+            "pregunta" : "¿Cuál es la capital de Francia?",
+            "opciones" : ["Lyon", "Marsella", "París", "Niza"],
+            "respuesta" : 2
+        },
+        {
+           "id" : 47,
+            "tipo" : "culturageneralvariada",
+            "pregunta" : "¿Cuántos colores tiene el arcoíris?",
+            "opciones" : ["5", "6", "8", "7"],
+            "respuesta" : 3
+        },
+        {
+           "id" : 48,
+            "tipo" : "culturageneralvariada",
+            "pregunta" : "¿Cuál es el tercer planeta del sistema solar?",
+            "opciones" : ["Venus", "Tierra", "Mercurio", "Marte"],
+            "respuesta" : 1
+        },
+        {
+           "id" : 49,
+            "tipo" : "culturageneralvariada",
+            "pregunta" : "¿Qué país es el más grande del mundo por superficie?",
+            "opciones" : ["Rusia", "EE.UU", "Candá", "India"],
+            "respuesta" : 0
+        },
+        {
+           "id" : 50,
+            "tipo" : "culturageneralvariada",
+            "pregunta" : "¿Cuál es la montaña más alta del mundo?",
+            "opciones" : ["K2", "Kilimanjaro", "Everest", "Aconcagua"],
+            "respuesta" : 2
+        } 
+    ]
+}
