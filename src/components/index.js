@@ -1,0 +1,1 @@
+export {cargarInicio} from './inicio/inicio.js';
