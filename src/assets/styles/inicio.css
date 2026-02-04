@@ -1,0 +1,16 @@
+.inicio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #64b7ff;
+    inline-size: 500px;
+    block-size: 300px;
+    margin: 0 auto;
+    border-radius: 10%;
+}
+
+.inicio:hover {
+    box-shadow: 0 0 10px #1592ff;
+    transition: ease-in;
+}
