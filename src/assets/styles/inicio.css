@@ -3,14 +3,91 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    
     background-color: #64b7ff;
-    inline-size: 500px;
-    block-size: 300px;
+    
+    width: 100%;
+    max-width: 500px;
+    min-height: 300px;
+
+    padding: 1.5rem;
     margin: 0 auto;
-    border-radius: 10%;
+
+    border-radius: 1rem;
+    transition: box-shadow 0.2s ease-in-out;
 }
 
 .inicio:hover {
     box-shadow: 0 0 10px #1592ff;
-    transition: ease-in;
+}
+
+.h1Inicio {
+    padding-bottom: 1.4rem;
+}
+
+.divFormInicio {
+    display: flex;
+    flex-direction: column;
+}
+
+.formInicio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.labelInicio {
+    padding-bottom: 0.6rem;
+    font-size: clamp(0.9rem, 2.5vw, 1.1rem);
+}
+
+.inputInicio {
+    background-color: #64b7ff;
+    border: none;
+    border-bottom: 2px solid black;
+    border-radius: 2px;
+
+    padding: 0.7rem 0.5rem 0.4rem 0.2rem;
+    width: 100%;
+    max-width: 200px;
+
+    font-size: 1rem;
+
+    transition: border-color 0.2s ease;
+}
+
+.inputInicio:focus {
+    outline: none;
+}
+
+.inputInicio::placeholder {
+    color: rgb(36, 37, 38);
+    font-size: 0.89rem;
+}
+
+.divButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0.35rem;
+}
+
+.buttonInicio {
+    margin-top: 0.65rem;
+    border: none;
+    border-radius: 4px;
+
+    min-width: 100px;
+    min-height: 25px;
+
+    background-color: rgb(0, 0, 0);
+    color:rgb(255, 255, 255);
+
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.buttonInicio:hover {
+    background-color: rgb(232, 244, 244);
+    color: rgb(0, 0, 0);
 }
