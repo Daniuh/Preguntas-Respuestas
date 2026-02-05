@@ -15,12 +15,17 @@ body {
 }
 
 footer {
-    background: #464040;
-    color: white;
+    background: #ffde2382;
+    
+    color: black;
     text-align: center;
-    padding: 5px;
     font-size: smaller;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration-line: none;
+
+    padding: 0.2rem;
+
+    border-radius: 5px;
 }
 
 .app {
@@ -29,4 +34,13 @@ footer {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+
+.aFooter {
+    text-decoration: none;
+    color: black;
+}
+
+.aFooter:hover {
+    color: rgb(69, 99, 130);
 }
