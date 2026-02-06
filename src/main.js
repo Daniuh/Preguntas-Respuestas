@@ -9,4 +9,6 @@ main.innerHTML = `
     </section>
 </main>`;
 
-cargarInicio();
+document.addEventListener('DOMContentLoaded', () => {
+    cargarInicio();
+});
