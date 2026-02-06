@@ -10,7 +10,7 @@ function eventos() {
     const inputNombreUsuario = document.querySelector('#inputNombreUsuario');
     const buttonInicio = document.querySelector('#buttonInicio');
 
-    if (!buttonInicio || !inputNombreUsuario) return;
+    if (!buttonInicio || !inputNombreUsuario) {return};
 
     obtenerClick(buttonInicio, inputNombreUsuario);
     ocultarMensajeError(inputNombreUsuario);
@@ -46,5 +46,4 @@ function ocultarMensajeError(inputNombreUsuario) {
             mensajeError.classList.add('noMostrarMensaje');
         }
     })
-
 }

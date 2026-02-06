@@ -90,8 +90,16 @@
 .buttonInicio:hover {
     background-color: rgb(232, 244, 244);
     color: rgb(0, 0, 0);
+
+    cursor: pointer;
 }
 
 .noMostrarMensaje {
     display: none;
+}
+
+.nameVacio {
+    color: rgb(179,0,0);
+
+    padding-top: 0.4rem;
 }
