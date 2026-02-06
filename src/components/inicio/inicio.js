@@ -36,6 +36,9 @@ function verificarName(nameUsuario) {
         error.classList.add('nameVacio');
 
         nameUsuario.after(error);
+    }else {
+        localStorage.setItem('nombreUsuario', name);
+        //TODO: Aquí se llama la función que imprimira lo siguiente al guardar el nombre
     }
 }
 
