@@ -3,12 +3,12 @@ import {cargarReglas} from '../index.js';
 export async function cargarInicio() {
     const respuesta = await fetch('html/inicio.html');
     const inicio = await respuesta.text();
-    document.getElementById('inicio').innerHTML = inicio;
+    document.getElementById('app').innerHTML = inicio;
 
-    eventos();
+    eventosInicio();
 }
 
-function eventos() {
+function eventosInicio() {
     const inputNombreUsuario = document.querySelector('#inputNombreUsuario');
     const buttonInicio = document.querySelector('#buttonInicio');
 
@@ -60,5 +60,6 @@ function verificarNameNoRepita(name) {
             cargarReglas();
         }else{
             localStorage.setItem('nombreUsuario', name);
+            cargarReglas();
         }
 }

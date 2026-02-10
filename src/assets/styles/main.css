@@ -44,3 +44,8 @@ footer {
 .aFooter:hover {
     color: rgb(69, 99, 130);
 }
+
+.ocultarContenido {
+    display: none;
+    transition: ease-out;
+}
