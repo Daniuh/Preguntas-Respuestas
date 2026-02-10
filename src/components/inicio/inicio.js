@@ -1,3 +1,5 @@
+import {cargarReglas} from '../index.js';
+
 export async function cargarInicio() {
     const respuesta = await fetch('html/inicio.html');
     const inicio = await respuesta.text();
@@ -36,10 +38,10 @@ function verificarName(nameUsuario) {
         error.classList.add('nameVacio');
 
         nameUsuario.after(error);
-    }else {
-        localStorage.setItem('nombreUsuario', name);
-        //TODO: Aquí se llama la función que imprimira lo siguiente al guardar el nombre
+        return;
     }
+        
+    verificarNameNoRepita(name);
 }
 
 function ocultarMensajeError(inputNombreUsuario) {
@@ -49,4 +51,14 @@ function ocultarMensajeError(inputNombreUsuario) {
             mensajeError.classList.add('noMostrarMensaje');
         }
     })
+}
+
+function verificarNameNoRepita(name) {
+    if (!localStorage.getItem('nombreUsuario')) {
+            localStorage.setItem('nombreUsuario', name);    
+            //DONE: Aquí se llama la función que imprimira lo siguiente al guardar el nombre
+            cargarReglas();
+        }else{
+            localStorage.setItem('nombreUsuario', name);
+        }
 }
