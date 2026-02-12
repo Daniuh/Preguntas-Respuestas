@@ -1,4 +1,4 @@
-import {cargarInicio} from '../index.js';
+import {cargarInicio, cargarTipo} from '../index.js';
 
 export async function cargarReglas() {
     const respuesta = await fetch('html/reglas.html');
@@ -26,6 +26,6 @@ function regresar(buttonR) {
 
 function continuar(buttonC) {
     buttonC.addEventListener('click', () => {
-        juego();
+        cargarTipo();
     });
 }
