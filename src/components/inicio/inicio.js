@@ -10,7 +10,7 @@ export async function cargarInicio() {
 
 function eventosInicio() {
     const inputNombreUsuario = document.querySelector('#inputNombreUsuario');
-    const buttonInicio = document.querySelector('#buttonInicio');
+    const buttonInicio       = document.querySelector('#buttonInicio');
 
     if (!buttonInicio || !inputNombreUsuario) {return};
 
