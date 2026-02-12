@@ -59,8 +59,8 @@
 }
 
 .bContinuarReglas:hover {
-    background-color: rgb(0, 0, 0);
-    color: rgb(184, 184, 184);
+    background-color: #ffde23b2;
+    color: rgb(0, 0, 0);
 
     cursor: pointer;
 }
@@ -83,8 +83,8 @@
 }
 
 .bRegresarReglas:hover {
-    background-color: rgb(0, 0, 0);
-    color: rgb(184, 184, 184);
+    background-color: #ffde23b2;
+    color: rgb(0, 0, 0);
 
     cursor: pointer;
 }
