@@ -1,0 +1,50 @@
+.elegirTipo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    width: 100%;
+}
+
+.divElegirT {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    background-color: #64b7ff;
+
+    width: 100%;
+    max-width: 1220px;
+    min-height: 560px;
+
+    border-radius: 1.5rem;
+}
+
+.divElegirT:hover {
+    box-shadow: 0 0 10px #1592ff;
+}
+
+/*.h1ElegirT {}*/
+
+/*.articleElegirT {}*/
+
+.imgElegirT {
+    max-width: 24rem;
+    min-height: 11rem;
+
+    border-radius: 1.5rem;
+
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+
+    transition: 0.2s;
+}
+
+.imgElegirT:hover {
+    cursor: pointer;
+
+    max-width: 24.2rem;
+    min-height: 11.2rem;
+}
