@@ -5,7 +5,7 @@ const main = document.getElementById('app');
 
 main.innerHTML = `
 <main class='main'>
-    <section id='app'>
+    <section id='appCargado'>
     </section>
 </main>`;
 

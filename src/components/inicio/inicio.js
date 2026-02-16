@@ -3,7 +3,7 @@ import {cargarReglas} from '../index.js';
 export async function cargarInicio() {
     const respuesta = await fetch('html/inicio.html');
     const inicio = await respuesta.text();
-    document.getElementById('app').innerHTML = inicio;
+    document.getElementById('appCargado').innerHTML = inicio;
 
     eventosInicio();
 }
