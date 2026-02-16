@@ -1,0 +1,1 @@
+export {obtenerVistas, renderVista} from './cargarVistaA.js';

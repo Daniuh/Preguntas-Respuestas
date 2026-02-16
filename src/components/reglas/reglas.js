@@ -1,4 +1,4 @@
-import {cargarInicio, cargarTipo} from '../index.js';
+import { obtenerVistas } from '../../modules/index.js';
 
 export async function cargarReglas() {
     const respuesta = await fetch('html/reglas.html');
@@ -20,12 +20,12 @@ function eventosReglas() {
 
 function regresar(buttonR) {
     buttonR.addEventListener('click', () => {
-        cargarInicio();
+        obtenerVistas('inicio');
     });
 }
 
 function continuar(buttonC) {
     buttonC.addEventListener('click', () => {
-        cargarTipo();
+        obtenerVistas('tipo');
     });
 }

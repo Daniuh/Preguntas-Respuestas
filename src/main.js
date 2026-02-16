@@ -1,4 +1,4 @@
-import { cargarInicio } from "./components/index.js";
+import { renderVista } from './modules/index.js';
 import '../src/assets/styles/index.css';
 
 const main = document.getElementById('app');
@@ -9,6 +9,5 @@ main.innerHTML = `
     </section>
 </main>`;
 
-document.addEventListener('DOMContentLoaded', () => {
-    cargarInicio();
-});
+document.addEventListener('DOMContentLoaded', renderVista);
+window.addEventListener("popstate", renderVista);

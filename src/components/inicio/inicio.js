@@ -1,4 +1,4 @@
-import {cargarReglas} from '../index.js';
+import { obtenerVistas } from '../../modules/index.js';
 
 export async function cargarInicio() {
     const respuesta = await fetch('html/inicio.html');
@@ -57,9 +57,9 @@ function verificarNameNoRepita(name) {
     if (!localStorage.getItem('nombreUsuario')) {
             localStorage.setItem('nombreUsuario', name);    
             //DONE: Aquí se llama la función que imprimira lo siguiente al guardar el nombre
-            cargarReglas();
+            obtenerVistas('reglas');
         }else{
             localStorage.setItem('nombreUsuario', name);
-            cargarReglas();
+            obtenerVistas('reglas');
         }
 }
