@@ -1,4 +1,4 @@
-export async function obtenerPregunta() {
+export async function obtenerPregunta(respuestaUsuario) {
     const res = await fetch('server/preguntas.json');
     const preguntas = await res.json();
 

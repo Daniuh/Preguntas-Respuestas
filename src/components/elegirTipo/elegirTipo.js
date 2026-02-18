@@ -10,5 +10,49 @@ export async function cargarTipo() {
 }
 
 function eventosTipo() {
-    obtenerPregunta();
+    const tipoCienciaNaturaleza = document.querySelector('#imgCienciaYNaturaleza');
+    const tipoHistoriaGeografia = document.querySelector('#imgHistoriaYGeografia');
+    const tipoArteLiteratura    = document.querySelector('#imgArteYLiteratura');
+    const tipoDeporteEntreten   = document.querySelector('#imgDeporteYEntretenimiento');
+    const tipoCulturaGeneral    = document.querySelector('#imgCulturaGeneral');
+
+    clicks(tipoCienciaNaturaleza, tipoHistoriaGeografia, tipoArteLiteratura, tipoDeporteEntreten, tipoCulturaGeneral);
+}
+
+function clicks(cn, hg, al, de, cg) {
+
+    cn.addEventListener('click', () => {
+        const respuesta = 'cienciaynaturaleza';
+
+        obtenerVistas('juego');
+        obtenerPregunta(respuesta);
+    });
+
+    hg.addEventListener('click', () => {
+        const respuesta = 'historiaygeografi';
+
+        obtenerVistas('juego');
+        obtenerPregunta(respuesta);
+    });
+
+    al.addEventListener('click', () => {
+        const respuesta = 'arteyliteratura';
+
+        obtenerVistas('juego');
+        obtenerPregunta(respuesta);
+    });
+
+    de.addEventListener('click', () => {
+        const respuesta = 'deportesyentretenimiento';
+
+        obtenerVistas('juego');
+        obtenerPregunta(respuesta);
+    });
+
+    cg.addEventListener('click', () => {
+        const respuesta = 'culturageneralvariada';
+
+        obtenerVistas('juego');
+        obtenerPregunta(respuesta);
+    });
 }
