@@ -1,4 +1,5 @@
 import { obtenerVistas } from '../../modules/index.js';
+import { obtenerPregunta } from '../../modules/obtenerPregunta.js';
 
 export async function cargarTipo() {
     const respuesta = await fetch('html/elegirTipo.html');
@@ -9,5 +10,5 @@ export async function cargarTipo() {
 }
 
 function eventosTipo() {
-    
+    obtenerPregunta();
 }
