@@ -1,3 +1,4 @@
+import { obtenerPregunta } from '../../modules/index.js'; 
 
 export async function cargarJuego() {
     const respuesta = await fetch('html/juego.html');
@@ -5,4 +6,8 @@ export async function cargarJuego() {
     document.getElementById('appCargado').innerHTML = inicio;
 
     eventosJuegos();
+}
+
+function eventosJuegos() {
+    obtenerPregunta();
 }
