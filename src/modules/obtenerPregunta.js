@@ -1,5 +1,7 @@
 import { getPreguntas } from '../modules/index.js';
 
+let preguntaRandom = [];
+
 export async function obtenerPregunta(respuestaUsuario) {
     const preguntas = getPreguntas();
     //TODO: Generar las preguntas por el tipo y de forma aleatoria
@@ -21,7 +23,9 @@ function elegirPreguntaAlea(preguntaFiltro) {
     }
 
     const randomIndex = Math.floor(Math.random() * preguntaFiltro.length);
-    const preguntaRandom = preguntaFiltro[randomIndex];
+    preguntaRandom = preguntaFiltro[randomIndex];
+}
 
-    console.log(preguntaRandom);
+export function getPreguntaRandom() {
+    return preguntaRandom;
 }

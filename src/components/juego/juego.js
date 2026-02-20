@@ -1,4 +1,4 @@
-import { obtenerPregunta } from '../../modules/index.js'; 
+import { getPreguntaRandom } from '../../modules/index.js'; 
 
 export async function cargarJuego() {
     const respuesta = await fetch('html/juego.html');
@@ -9,5 +9,6 @@ export async function cargarJuego() {
 }
 
 function eventosJuegos() {
-    //obtenerPregunta();
+    console.log(getPreguntaRandom());
+    
 }
