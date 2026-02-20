@@ -29,7 +29,7 @@ function clicks(cn, hg, al, de, cg) {
     });
 
     hg.addEventListener('click', () => {
-        const respuesta = 'historiaygeografi';
+        const respuesta = 'historiaygeografia';
 
         obtenerVistas('juego');
         obtenerPregunta(respuesta);

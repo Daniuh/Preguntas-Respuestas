@@ -1,14 +1,9 @@
+import { getPreguntas } from '../modules/index.js';
+
 export async function obtenerPregunta(respuestaUsuario) {
-    const res = await fetch('server/preguntas.json');
-    const preguntas = await res.json();
-
-    const respuestaU = respuestaUsuario;
-    console.log(respuestaUsuario);
-
-    //console.log (preguntas.preguntas[35].pregunta);
-
+    const preguntas = getPreguntas();
     //TODO: Generar las preguntas por el tipo y de forma aleatoria
-    filtrarTipo(respuestaUsuario, preguntas.preguntas);
+    filtrarTipo(respuestaUsuario, preguntas);
 }
 
 function filtrarTipo(respuestaUsuario, objPreguntas) {
@@ -25,8 +20,8 @@ function elegirPreguntaAlea(preguntaFiltro) {
         return;
     }
 
-    const randomIndex = Math.floor(Math.random() * filtradas.length);
-    const preguntaRandom = filtradas[randomIndex];
+    const randomIndex = Math.floor(Math.random() * preguntaFiltro.length);
+    const preguntaRandom = preguntaFiltro[randomIndex];
 
     console.log(preguntaRandom);
 }

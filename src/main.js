@@ -1,4 +1,4 @@
-import { renderVista } from './modules/index.js';
+import { renderVista, cargarPreguntas } from './modules/index.js';
 import '../src/assets/styles/index.css';
 
 const main = document.getElementById('app');
@@ -9,5 +9,8 @@ main.innerHTML = `
     </section>
 </main>`;
 
-document.addEventListener('DOMContentLoaded', renderVista);
+document.addEventListener('DOMContentLoaded', async () => {
+    await cargarPreguntas();
+    renderVista();
+});
 window.addEventListener("popstate", renderVista);

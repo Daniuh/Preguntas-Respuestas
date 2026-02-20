@@ -9,5 +9,5 @@ export async function cargarJuego() {
 }
 
 function eventosJuegos() {
-    obtenerPregunta();
+    //obtenerPregunta();
 }
