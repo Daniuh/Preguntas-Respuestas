@@ -1,11 +1,76 @@
-.juego {}
+.juego {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 
-.divPrincipalJuego {}
+    width: 100%;
 
-.divJuegoH1P {}
+    background-color: #5c98cd;
 
-.h1Juego {}
+    max-width: 1000px;
+    min-height: 400px;
 
-.divUlLiJuego {}
+    border-radius: 1.5rem;
+}
 
-.ulJuego {}
+.divJuegoH1P {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.h1Juego {
+    margin: 1.5rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+
+    background-color: #00D5FF;
+    
+    font-size: 2rem;
+
+    margin-top: 3rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-bottom: 3.5rem;
+}
+
+.divUlLiJuego {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ulJuego {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    list-style-type: none;
+}
+
+.divLi1, .divLi2, .divLi3, .divLi4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #00D5FF;
+
+    min-width: 400px;
+    min-height: 100px;
+
+    margin: 1rem;
+    border-radius: 1.2rem;
+}
+
+.divLi1, .divLi2, .divLi3, .divLi4 {
+    cursor: pointer;
+}
+
+.li1, .li2, .li3, .li4 {
+    margin: 1.5rem;
+    padding: 1rem;
+
+    font-size: 1.6rem;
+}
