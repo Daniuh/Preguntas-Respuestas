@@ -4,7 +4,6 @@ let preguntaRandom = [];
 
 export async function obtenerPregunta(respuestaUsuario) {
     const preguntas = getPreguntas();
-    //TODO: Generar las preguntas por el tipo y de forma aleatoria
     filtrarTipo(respuestaUsuario, preguntas);
 }
 

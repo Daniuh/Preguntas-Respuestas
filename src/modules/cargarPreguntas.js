@@ -1,4 +1,3 @@
-
 let preguntas = [];
 
 export async function cargarPreguntas() {
