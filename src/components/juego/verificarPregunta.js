@@ -10,6 +10,9 @@ export function verificarRespuesta(respuesta) {
 function listeners(op1, op2, op3, op4, opCorrecta) {
     let valor = 0;
 
+    console.log(opCorrecta);
+    
+
     op1.addEventListener('click', () => {
         valor = 0;
 
@@ -31,7 +34,7 @@ function listeners(op1, op2, op3, op4, opCorrecta) {
     });
 
     op3.addEventListener('click', () => {
-        valor = 1;
+        valor = 2;
 
         if (valor === opCorrecta) {
             console.log('Respuesta correcta');
@@ -41,7 +44,7 @@ function listeners(op1, op2, op3, op4, opCorrecta) {
     });
 
     op4.addEventListener('click', () => {
-        valor = 1;
+        valor = 3;
 
         if (valor === opCorrecta) {
             console.log('Respuesta correcta');
