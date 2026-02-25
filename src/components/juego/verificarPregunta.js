@@ -11,42 +11,54 @@ function listeners(op1, op2, op3, op4, opCorrecta) {
     let valor = 0;
 
     console.log(opCorrecta);
-    
 
+    validarOp1(op1, opCorrecta, valor);
+    validarOp2(op2, opCorrecta, valor);
+    validarOp3(op3, opCorrecta, valor);
+    validarOp4(op4, opCorrecta, valor);
+}
+
+function validarOp1(op1, respuesta, valorOp) {
     op1.addEventListener('click', () => {
-        valor = 0;
+        valorOp = 0;
 
-        if (valor === opCorrecta) {
+        if (valorOp === respuesta) {
             console.log('Respuesta correcta');
         } else {
             console.log('Respuesta incorrecta');
         }
     });
+}
 
+function validarOp2(op2, respuesta, valorOp) {
     op2.addEventListener('click', () => {
-        valor = 1;
+        valorOp = 1;
 
-        if (valor === opCorrecta) {
+        if (valorOp === respuesta) {
             console.log('Respuesta correcta');
         } else {
             console.log('Respuesta incorrecta');
         }
     });
+}
 
+function validarOp3(op3, respuesta, valorOp) {
     op3.addEventListener('click', () => {
-        valor = 2;
+        valorOp = 2;
 
-        if (valor === opCorrecta) {
+        if (valorOp === respuesta) {
             console.log('Respuesta correcta');
         } else {
             console.log('Respuesta incorrecta');
         }
     });
+}
 
+function validarOp4(op4, respuesta, valorOp) {
     op4.addEventListener('click', () => {
-        valor = 3;
+        valorOp = 3;
 
-        if (valor === opCorrecta) {
+        if (valorOp === respuesta) {
             console.log('Respuesta correcta');
         } else {
             console.log('Respuesta incorrecta');
