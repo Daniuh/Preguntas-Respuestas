@@ -31,6 +31,21 @@
 
     margin-top: 3rem;
     margin-left: 3rem;
+    margin-right: 1rem;
+    margin-bottom: 3.5rem;
+}
+
+.pJuego {
+    margin: 1.5rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+
+    background-color: #ffffffa6;
+    
+    font-size: 2rem;
+
+    margin-top: 3rem;
+    margin-left: 1rem;
     margin-right: 3rem;
     margin-bottom: 3.5rem;
 }

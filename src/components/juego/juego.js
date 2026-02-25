@@ -1,4 +1,5 @@
 import { getPreguntaRandom, obtenerVistas } from '../../modules/index.js'; 
+import { verificarRespuesta } from '../index.js';
 
 export async function cargarJuego() {
     const respuesta = await fetch('html/juego.html');
@@ -14,6 +15,7 @@ function eventosJuegos() {
     const opcion2Li  = document.querySelector('.li2');
     const opcion3Li  = document.querySelector('.li3');
     const opcion4Li  = document.querySelector('.li4');
+    const puntaje    = document.querySelector('.pJuego');
 
     const pregunta = getPreguntaRandom().pregunta;
 
@@ -26,8 +28,15 @@ function eventosJuegos() {
     const opcion3  = getPreguntaRandom().opciones[2];
     const opcion4  = getPreguntaRandom().opciones[3];
 
+    const respuesta = parseInt(getPreguntaRandom().respuesta);
+
     pintarPregunta(preguntaH1, pregunta);
     pintarRespuestas(opcion1, opcion1Li, opcion2, opcion2Li, opcion3, opcion3Li, opcion4, opcion4Li);
+
+    iniciarPuntaje();
+    pintarPuntaje(puntaje);
+
+    verificarRespuesta(respuesta);
 }
 
 function pintarPregunta(preguntaH1, pregunta) {
@@ -39,4 +48,18 @@ function pintarRespuestas(op1, opL1, op2, opL2, op3, opL3, op4, opL4) {
     opL2.innerText = op2;
     opL3.innerText = op3;
     opL4.innerText = op4;
+}
+
+function iniciarPuntaje() {
+    if(!localStorage.getItem('puntajeUsuario')){
+        localStorage.setItem('puntajeUsuario', 0);
+    } else {
+        localStorage.setItem('puntajeUsuario', 0);
+    }
+}
+
+function pintarPuntaje(pPuntaje) {
+    const puntaje = localStorage.getItem('puntajeUsuario');
+
+    pPuntaje.innerText = puntaje;
 }
