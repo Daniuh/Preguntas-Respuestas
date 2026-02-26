@@ -20,11 +20,12 @@ function eventosJuegos() {
       return obtenerVistas('tipo'); 
     }
 
-    //const opcion1  = getPreguntaRandom().opciones[0];
-    
-
     const respuesta = Number(getPreguntaRandom().respuesta);
 
+    flujoJuego(preguntaH1, pregunta, preguntas, puntaje, respuesta);
+}
+
+function flujoJuego(preguntaH1, pregunta, preguntas, puntaje, respuesta) {
     pintarPregunta(preguntaH1, pregunta);
     pintarRespuestas(preguntas);
 

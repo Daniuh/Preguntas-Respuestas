@@ -10,49 +10,18 @@ export async function cargarTipo() {
 }
 
 function eventosTipo() {
-    const tipoCienciaNaturaleza = document.querySelector('#imgCienciaYNaturaleza');
-    const tipoHistoriaGeografia = document.querySelector('#imgHistoriaYGeografia');
-    const tipoArteLiteratura    = document.querySelector('#imgArteYLiteratura');
-    const tipoDeporteEntreten   = document.querySelector('#imgDeporteYEntretenimiento');
-    const tipoCulturaGeneral    = document.querySelector('#imgCulturaGeneral');
+    const tipos = document.querySelectorAll('.articleElegirT');
 
-    clicks(tipoCienciaNaturaleza, tipoHistoriaGeografia, tipoArteLiteratura, tipoDeporteEntreten, tipoCulturaGeneral);
+    clickTipo(tipos);
 }
 
-function clicks(cn, hg, al, de, cg) {
+function clickTipo(tiposP) {
+    tiposP.forEach(tiposP => {
+        tiposP.addEventListener('click', () => {
+            const respuesta = Number(tiposP.dataset.indice);
 
-    cn.addEventListener('click', () => {
-        const respuesta = 'cienciaynaturaleza';
-
-        obtenerVistas('juego');
-        obtenerPregunta(respuesta);
-    });
-
-    hg.addEventListener('click', () => {
-        const respuesta = 'historiaygeografia';
-
-        obtenerVistas('juego');
-        obtenerPregunta(respuesta);
-    });
-
-    al.addEventListener('click', () => {
-        const respuesta = 'arteyliteratura';
-
-        obtenerVistas('juego');
-        obtenerPregunta(respuesta);
-    });
-
-    de.addEventListener('click', () => {
-        const respuesta = 'deportesyentretenimiento';
-
-        obtenerVistas('juego');
-        obtenerPregunta(respuesta);
-    });
-
-    cg.addEventListener('click', () => {
-        const respuesta = 'culturageneralvariada';
-
-        obtenerVistas('juego');
-        obtenerPregunta(respuesta);
+            obtenerVistas('juego');
+            obtenerPregunta(respuesta);
+        });
     });
 }

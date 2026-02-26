@@ -9,7 +9,7 @@ export async function obtenerPregunta(respuestaUsuario) {
 
 function filtrarTipo(respuestaUsuario, objPreguntas) {
     const filtradas = objPreguntas.filter(
-        p => p.tipo === respuestaUsuario
+        p => p.tipoIndice === respuestaUsuario
     );
 
     elegirPreguntaAlea(filtradas);
