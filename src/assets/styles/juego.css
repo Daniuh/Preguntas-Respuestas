@@ -65,7 +65,7 @@
     list-style-type: none;
 }
 
-.divLi1, .divLi2, .divLi3, .divLi4 {
+.opcion {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -77,9 +77,7 @@
 
     margin: 1rem;
     border-radius: 1.2rem;
-}
 
-.divLi1, .divLi2, .divLi3, .divLi4 {
     cursor: pointer;
 }
 
