@@ -11,10 +11,7 @@ export async function cargarJuego() {
 
 function eventosJuegos() {
     const preguntaH1 = document.querySelector('.h1Juego');
-    const opcion1Li  = document.querySelector('.li1');
-    const opcion2Li  = document.querySelector('.li2');
-    const opcion3Li  = document.querySelector('.li3');
-    const opcion4Li  = document.querySelector('.li4');
+    const preguntas  = document.querySelectorAll('.preguntas');
     const puntaje    = document.querySelector('.pJuego');
 
     const pregunta = getPreguntaRandom().pregunta;
@@ -23,15 +20,13 @@ function eventosJuegos() {
       return obtenerVistas('tipo'); 
     }
 
-    const opcion1  = getPreguntaRandom().opciones[0];
-    const opcion2  = getPreguntaRandom().opciones[1];
-    const opcion3  = getPreguntaRandom().opciones[2];
-    const opcion4  = getPreguntaRandom().opciones[3];
+    //const opcion1  = getPreguntaRandom().opciones[0];
+    
 
-    const respuesta = parseInt(getPreguntaRandom().respuesta);
+    const respuesta = Number(getPreguntaRandom().respuesta);
 
     pintarPregunta(preguntaH1, pregunta);
-    pintarRespuestas(opcion1, opcion1Li, opcion2, opcion2Li, opcion3, opcion3Li, opcion4, opcion4Li);
+    pintarRespuestas(preguntas);
 
     iniciarPuntaje();
     pintarPuntaje(puntaje);
@@ -43,11 +38,12 @@ function pintarPregunta(preguntaH1, pregunta) {
     preguntaH1.innerText = pregunta;
 }
 
-function pintarRespuestas(op1, opL1, op2, opL2, op3, opL3, op4, opL4) {
-    opL1.innerText = op1;
-    opL2.innerText = op2;
-    opL3.innerText = op3;
-    opL4.innerText = op4;
+function pintarRespuestas(preguntas) {
+    preguntas.forEach(preguntas => {
+        const indice = Number(preguntas.dataset.indice);
+
+        preguntas.innerText = getPreguntaRandom().opciones[indice];
+    });
 }
 
 function iniciarPuntaje() {
