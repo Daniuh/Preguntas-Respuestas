@@ -14,13 +14,18 @@ function validarOpcionSelec(opcion, respuesta) {
     opcion.forEach(opcion => {
         opcion.addEventListener('click', () => {
             const indice = Number(opcion.dataset.indice);
+            
+            let esCorrectaResp = true;
 
             if(indice === respuesta){
-                alert('Respuesta correcta');
+                esCorrectaResp
+                
             } else {
-                alert('Respuesta incorrecta');
+                esCorrectaResp = !esCorrectaResp;
+                
             }
-        })
+        });
     });
 }
+
 

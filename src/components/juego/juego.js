@@ -33,6 +33,7 @@ function flujoJuego(preguntaH1, pregunta, preguntas, puntaje, respuesta) {
     pintarPuntaje(puntaje);
 
     verificarRespuesta(respuesta);
+    
 }
 
 function pintarPregunta(preguntaH1, pregunta) {
