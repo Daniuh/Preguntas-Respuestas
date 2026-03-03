@@ -1,3 +1,5 @@
+import { pintarRespuesta } from '../index.js';
+
 export function verificarRespuesta(respuesta) {
     const opciones = document.querySelectorAll('.opcion');
 
@@ -18,11 +20,13 @@ function validarOpcionSelec(opcion, respuesta) {
             let esCorrectaResp = true;
 
             if(indice === respuesta){
-                esCorrectaResp
-                
+                esCorrectaResp;
+
+               return pintarRespuesta(esCorrectaResp, indice, respuesta);
             } else {
-                esCorrectaResp = !esCorrectaResp;
-                
+                esCorrectaResp = !esCorrectaResp; 
+
+                return pintarRespuesta(esCorrectaResp, indice, respuesta);
             }
         });
     });
