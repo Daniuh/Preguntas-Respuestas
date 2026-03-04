@@ -93,7 +93,7 @@
     justify-content: center;
     align-items: center;
 
-    background-color: #00ff33ab;
+    background-color: #16A34A;
     transition: background-color 0.5s ease, color 0.5s ease;
 
     min-width: 400px;
@@ -108,7 +108,7 @@
     justify-content: center;
     align-items: center;
 
-    background-color: #ff0000a9;
+    background-color: #EF4444;
     transition: background-color 0.5s ease, color 0.5s ease;
 
     min-width: 400px;
