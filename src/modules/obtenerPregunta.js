@@ -1,5 +1,6 @@
 import { getPreguntas } from '../modules/index.js';
 
+let pregunta, respuesta;
 let preguntaRandom = [];
 
 export async function obtenerPregunta(respuestaUsuario) {
@@ -23,6 +24,18 @@ function elegirPreguntaAlea(preguntaFiltro) {
 
     const randomIndex = Math.floor(Math.random() * preguntaFiltro.length);
     preguntaRandom = preguntaFiltro[randomIndex];
+
+    pregunta  = preguntaRandom.pregunta;
+    respuesta = preguntaRandom.respuesta;
+
+}
+
+export function getPregunta() {
+    return pregunta;
+}
+
+export function getRespuesta() {
+    return respuesta;
 }
 
 export function getPreguntaRandom() {

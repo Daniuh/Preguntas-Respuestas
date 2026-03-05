@@ -1,38 +1,36 @@
-import { getPreguntaRandom, obtenerVistas } from '../../modules/index.js'; 
+import { obtenerVistas, getPregunta, getRespuesta, getPreguntaRandom } from '../../modules/index.js'; 
 import { verificarRespuesta } from '../index.js';
 
 export async function cargarJuego() {
     const respuesta = await fetch('html/juego.html');
     const inicio = await respuesta.text();
-    document.getElementById('appCargado').innerHTML = inicio;
+    const elemento = document.getElementById('appCargado');
 
-    eventosJuegos();
+    elemento.innerHTML = inicio;
+
+    eventosJuegos(elemento);
 }
 
-function eventosJuegos() {
+function eventosJuegos(elemento) {
     const preguntaH1 = document.querySelector('.h1Juego');
     const preguntas  = document.querySelectorAll('.preguntas');
     const puntaje    = document.querySelector('.pJuego');
 
-    const pregunta = getPreguntaRandom().pregunta;
-
-    if(!pregunta){
+    if(!getPregunta()){
       return obtenerVistas('tipo'); 
     }
 
-    const respuesta = Number(getPreguntaRandom().respuesta);
-
-    flujoJuego(preguntaH1, pregunta, preguntas, puntaje, respuesta);
+    flujoJuego(preguntaH1, getPregunta(), preguntas, puntaje, getRespuesta(), elemento);
 }
 
-function flujoJuego(preguntaH1, pregunta, preguntas, puntaje, respuesta) {
+function flujoJuego(preguntaH1, pregunta, preguntas, puntaje, respuesta, elemento) {
     pintarPregunta(preguntaH1, pregunta);
     pintarRespuestas(preguntas);
 
     iniciarPuntaje();
     pintarPuntaje(puntaje);
 
-    verificarRespuesta(respuesta);
+    verificarRespuesta(respuesta, elemento);
     
 }
 
@@ -50,8 +48,6 @@ function pintarRespuestas(preguntas) {
 
 function iniciarPuntaje() {
     if(!localStorage.getItem('puntajeUsuario')){
-        localStorage.setItem('puntajeUsuario', 0);
-    } else {
         localStorage.setItem('puntajeUsuario', 0);
     }
 }

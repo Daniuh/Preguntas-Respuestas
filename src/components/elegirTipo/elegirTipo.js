@@ -1,5 +1,4 @@
-import { obtenerVistas } from '../../modules/index.js';
-import { obtenerPregunta } from '../../modules/obtenerPregunta.js';
+import { obtenerVistas, obtenerPregunta } from '../../modules/index.js';
 
 export async function cargarTipo() {
     const respuesta = await fetch('html/elegirTipo.html');
@@ -19,6 +18,8 @@ function clickTipo(tiposP) {
     tiposP.forEach(tiposP => {
         tiposP.addEventListener('click', () => {
             const respuesta = Number(tiposP.dataset.indice);
+
+            localStorage.setItem('TipoActual', respuesta);
 
             obtenerVistas('juego');
             obtenerPregunta(respuesta);
