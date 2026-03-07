@@ -1,4 +1,5 @@
 import { cargarModalOpcion } from '../index.js';
+import { cargarModalPerdio } from '../index.js';
 
 export function pintarRespuesta(esCorrecta, opcion, respuesta, elemento) {
     console.log(esCorrecta, opcion, respuesta);
@@ -13,6 +14,7 @@ function pintarRespuestaCorrectaUsuario(resultEleccion, respuestaCorrecta, op, e
         cargarModalOpcion(elemento);
     } else {
         eleccionIncorrecta(respuestaCorrecta, op);
+        cargarModalPerdio(elemento);
     }
 }
 
