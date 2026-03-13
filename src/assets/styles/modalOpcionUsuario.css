@@ -49,6 +49,9 @@
     justify-content: center;
     align-items: center;
     padding-top: 0.65rem;
+
+    max-width: 150px;
+    min-height: 100px;
 }
 
 .buttonContinuar {
