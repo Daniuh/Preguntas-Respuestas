@@ -1,4 +1,4 @@
-import modalHtml from '../../../public/html/modalPerdio.html';
+import modalHtml from '../../../public/html/modalPerdio.html?raw';
 import { obtenerVistas } from '../../modules/index.js';
 
 let modal;
@@ -18,4 +18,24 @@ export const cargarModalPerdio = (elemento) => {
 
     elemento.append(modal);
 
+    eventosModalPerdio();
+}
+
+function eventosModalPerdio() {
+    const h1Modal     = document.querySelector('.h1ModalPerdio');
+    const botonPerdio = document.querySelector('.buttonPerdio');
+
+    imrpimirInfo(h1Modal);
+    clickBtn(botonPerdio);
+}
+
+function imrpimirInfo(h1) {
+    h1.innerText = `Lo sentimos ${localStorage.getItem('nombreUsuario')}, pero has perdido.`
+}
+
+function clickBtn(btn) {
+    btn.addEventListener('click', () => {
+        //TODO: Llamar la vista final del juego, que muestra el historico del juego.
+        alert('Hola');
+    })
 }
