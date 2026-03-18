@@ -64,7 +64,7 @@
     background-color: #e9d5ff;
 
     min-width: 110px;
-    min-height: 40px;
+    min-height: 25px;
 
     transition: min-width 0.1s ease, min-height 0.1s ease;
 }
