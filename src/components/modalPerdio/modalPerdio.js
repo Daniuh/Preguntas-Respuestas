@@ -30,7 +30,8 @@ function eventosModalPerdio() {
 }
 
 function imrpimirInfo(h1) {
-    h1.innerText = `Lo sentimos ${localStorage.getItem('nombreUsuario')}, pero has perdido.`
+    const mensaje = `Lo sentimos ${localStorage.getItem('nombreUsuario')}, pero has perdido.`;
+    h1.innerText = mensaje;
 }
 
 function clickBtn(btn) {
