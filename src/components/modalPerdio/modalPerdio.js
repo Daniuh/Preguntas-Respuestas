@@ -35,7 +35,6 @@ function imrpimirInfo(h1) {
 
 function clickBtn(btn) {
     btn.addEventListener('click', () => {
-        //TODO: Llamar la vista final del juego, que muestra el historico del juego.
-        alert('Hola');
+        obtenerVistas('finalJuego');
     })
 }

@@ -1,10 +1,11 @@
-import {cargarInicio, cargarTipo, cargarReglas, cargarJuego} from '../components/index.js';
+import { cargarInicio, cargarTipo, cargarReglas, cargarJuego, cargarFinalJuego } from '../components/index.js';
 
 const vistas = {
     'inicio' : cargarInicio,
     'tipo' : cargarTipo,
     'reglas' : cargarReglas,
-    'juego' : cargarJuego
+    'juego' : cargarJuego,
+    'finalJuego' : cargarFinalJuego
 }
 
 export function obtenerVistas(view) {

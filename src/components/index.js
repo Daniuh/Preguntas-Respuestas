@@ -6,3 +6,4 @@ export {verificarRespuesta} from './juego/verificarRespuesta.js';
 export {pintarRespuesta} from './juego/pintarRespuesta.js';
 export {cargarModalOpcion} from './modalOpcionUsuario/modalOpcionUsuario.js';
 export {cargarModalPerdio} from './modalPerdio/modalPerdio.js';
+export {cargarFinalJuego} from './finalJuego/finalJuego.js';
