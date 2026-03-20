@@ -27,5 +27,6 @@ function regresar(buttonR) {
 function continuar(buttonC) {
     buttonC.addEventListener('click', () => {
         obtenerVistas('tipo');
+        localStorage.setItem('rondasUsuario', 1);
     });
 }

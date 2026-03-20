@@ -2,7 +2,7 @@ import { getPreguntas } from '../modules/index.js';
 
 let pregunta, respuesta, preguntaFiltrada;
 let preguntaRandom = [];
-let preguntasYaRealizadas = ['Preguntas'];
+let preguntasYaRealizadas = [];
 
 export async function obtenerPregunta(respuestaUsuario) {
     const preguntas = getPreguntas();

@@ -36,6 +36,7 @@ function clicks() {
 
 function continuar(c, r) {
     c.addEventListener('click', () => {
+        conteoRondas();
         cambiarVistaModal(c, r);
     });
 }
@@ -84,4 +85,18 @@ export function getUsuarioRetirarse() {
 
 export function setUsuarioRetirarse(valor) {
     usuarioRetirarse = valor;
+}
+
+function conteoRondas() {
+    let rondas = Number(localStorage.getItem('rondasUsuario')) || 0;
+    
+    rondas++;
+
+    const conteoGlobal = Number(localStorage.getItem('rondasUsuario'));
+
+    if(conteoGlobal === 10){
+        obtenerVistas('finalJuego');
+    }else {
+        localStorage.setItem('rondasUsuario', rondas);
+    }
 }
