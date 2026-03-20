@@ -1,7 +1,8 @@
 import { getPreguntas } from '../modules/index.js';
 
-let pregunta, respuesta;
+let pregunta, respuesta, preguntaFiltrada;
 let preguntaRandom = [];
+let preguntasYaRealizadas = ['Preguntas'];
 
 export async function obtenerPregunta(respuestaUsuario) {
     const preguntas = getPreguntas();
@@ -22,12 +23,25 @@ function elegirPreguntaAlea(preguntaFiltro) {
         return;
     }
 
-    const randomIndex = Math.floor(Math.random() * preguntaFiltro.length);
-    preguntaRandom = preguntaFiltro[randomIndex];
+    generarPreguntaRandom(preguntaFiltro);
+}
 
-    pregunta  = preguntaRandom.pregunta;
-    respuesta = preguntaRandom.respuesta;
+function generarPreguntaRandom(preguntaF) {
+    const randomIndex = Math.floor(Math.random() * preguntaF.length);
+    preguntaRandom = preguntaF[randomIndex];
 
+    verificarPreguntaNoRepita(preguntaRandom, preguntaF);
+}
+
+function verificarPreguntaNoRepita(preguntaA, preguntaFiltro) {
+    if(preguntasYaRealizadas.includes(preguntaA.id)) {
+      generarPreguntaRandom(preguntaFiltro);
+    }else {
+        preguntasYaRealizadas.push(preguntaA.id);
+        pregunta  = preguntaA.pregunta;
+        respuesta = preguntaA.respuesta;
+        preguntaFiltrada = preguntaA;
+    }
 }
 
 export function getPregunta() {
@@ -39,5 +53,5 @@ export function getRespuesta() {
 }
 
 export function getPreguntaRandom() {
-    return preguntaRandom;
+    return preguntaFiltrada;
 }
