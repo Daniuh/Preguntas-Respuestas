@@ -26,8 +26,8 @@ function eventosModal() {
 }
 
 function clicks() {
-    const continuarButton = document.querySelector('.buttonContinuar');
-    const retirarseButton = document.querySelector('.buttonRetirarse');
+    const continuarButton = document.querySelector('#buttonContinuar');
+    const retirarseButton = document.querySelector('#buttonRetirarse');
 
     continuar(continuarButton, retirarseButton);
     retirarse(retirarseButton);
@@ -51,7 +51,10 @@ function cambiarVistaModal(c, r) {
     const textoH1 = document.querySelector('.h1Modal');
 
     textoH1.innerText = 'Elige una opción primero';
-    textoP.innerText  = 'Ahora escoge si deseas cambiar la categoría de la pregunta o continuar con la misma.'
+    textoP.innerText  = 'Ahora escoge si deseas cambiar la categoría de la pregunta o continuar con la misma.';
+
+    r.classList.remove('buttonRetirarse');
+    r.classList.add('buttonContinuarMismoTipo');
     c.innerText       = 'Cambiar tipo';
     r.innerText       = 'Continuar con el mismo tipo';
 
