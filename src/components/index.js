@@ -7,3 +7,4 @@ export {pintarRespuesta} from './juego/pintarRespuesta.js';
 export {cargarModalOpcion} from './modalOpcionUsuario/modalOpcionUsuario.js';
 export {cargarModalPerdio} from './modalPerdio/modalPerdio.js';
 export {cargarFinalJuego} from './finalJuego/finalJuego.js';
+export {getUsuarioRetirarse, setUsuarioRetirarse} from './modalOpcionUsuario/modalOpcionUsuario.js';

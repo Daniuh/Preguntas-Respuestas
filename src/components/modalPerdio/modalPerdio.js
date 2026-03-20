@@ -1,5 +1,6 @@
 import modalHtml from '../../../public/html/modalPerdio.html?raw';
 import { obtenerVistas } from '../../modules/index.js';
+import { setUsuarioRetirarse } from '../index.js';
 
 let modal;
 
@@ -36,6 +37,7 @@ function imrpimirInfo(h1) {
 
 function clickBtn(btn) {
     btn.addEventListener('click', () => {
+        setUsuarioRetirarse(false);
         obtenerVistas('finalJuego');
     })
 }

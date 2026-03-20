@@ -1,11 +1,24 @@
-import { obtenerVistas } from '../../modules/cargarVistaA.js';
+import { obtenerVistas } from '../../modules/index.js';
+import { getUsuarioRetirarse } from '../index.js';
 
-export async function cargarFinalJuego() {
-    const respuesta = await fetch('html/finalJuego.html');
-    const finalJuego = await respuesta.text();
-    document.getElementById('appCargado').innerHTML = finalJuego;
+export function cargarFinalJuego() {
+    elegirVista();
+}
 
-    eventosFinalJuego();
+async function elegirVista() {
+    console.log(getUsuarioRetirarse());
+    if (getUsuarioRetirarse()) {
+        const respuesta = await fetch('html/finalJuego.html');
+        const finalJuego = await respuesta.text();
+        document.getElementById('appCargado').innerHTML = finalJuego;
+
+        eventosFinalJuego();
+        return;    
+    }else{
+        const respuesta = await fetch('html/finalJuegoRetirarse.html');
+        const finalJuego = await respuesta.text();
+        document.getElementById('appCargado').innerHTML = finalJuego;
+    }
 }
 
 function eventosFinalJuego() {
@@ -19,7 +32,7 @@ function eventosFinalJuego() {
 
 function clickBtnJugar(btn) {
     btn.addEventListener('click', () => {
-        obtenerVistas('tipo');
+        obtenerVistas('juego');
     })
 }
 
