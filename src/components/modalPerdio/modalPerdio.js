@@ -38,6 +38,6 @@ function imrpimirInfo(h1) {
 function clickBtn(btn) {
     btn.addEventListener('click', () => {
         setUsuarioRetirarse(false);
-        obtenerVistas('finalJuego');
+        obtenerVistas('finalJuegoPerdio');
     })
 }

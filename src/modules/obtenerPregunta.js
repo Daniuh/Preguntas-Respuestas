@@ -55,3 +55,7 @@ export function getRespuesta() {
 export function getPreguntaRandom() {
     return preguntaFiltrada;
 }
+
+export function getPreguntasYaRealizadas() {
+    return preguntasYaRealizadas;
+}

@@ -1,14 +1,14 @@
 import { obtenerVistas } from '../../modules/index.js';
 import { getUsuarioRetirarse } from '../index.js';
 
-export function cargarFinalJuego() {
+export function cargarFinalJuegoRetirarse() {
     elegirVista();
 }
 
 async function elegirVista() {
     console.log(getUsuarioRetirarse());
     if (getUsuarioRetirarse()) {
-        const respuesta = await fetch('html/finalJuego.html');
+        const respuesta = await fetch('html/finalJuegoRetirarse.html');
         const finalJuego = await respuesta.text();
         document.getElementById('appCargado').innerHTML = finalJuego;
 
@@ -32,13 +32,13 @@ function eventosFinalJuego() {
 
 function clickBtnJugar(btn) {
     btn.addEventListener('click', () => {
-        obtenerVistas('juego');
-    })
+        obtenerVistas('reglas');
+    });
 }
 
 function clickBtnSalir(btn) {
     btn.addEventListener('click', () => {
         obtenerVistas('inicio');
-    })
+    });
 }
 
