@@ -2,7 +2,6 @@ import modalHtml from '../../../public/html/modalOpcionUsuario.html?raw';
 import { obtenerPregunta, obtenerVistas } from '../../modules/index.js';
 
 let modal;
-let usuarioRetirarse;
 
 export const mostrarModal = () => {
     modal?.classList.remove('ocultarModal');
@@ -43,7 +42,6 @@ function continuar(c, r) {
 
 function retirarse(r) {
     r.addEventListener('click', () => {
-        usuarioRetirarse = true;
         obtenerVistas('finalJuego');
     });
 }
@@ -77,14 +75,6 @@ function continuarConElMismo(r) {
         obtenerVistas('juego');
         obtenerPregunta(tipoActual);
     });
-}
-
-export function getUsuarioRetirarse() {
-    return usuarioRetirarse;
-}
-
-export function setUsuarioRetirarse(valor) {
-    usuarioRetirarse = valor;
 }
 
 function conteoRondas() {
