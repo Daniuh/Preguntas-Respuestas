@@ -1,3 +1,4 @@
+import { obtenerVistas } from '../../modules/index.js';
 
 export async function cargarFinalJuegoPerdio() {
     const respuesta = await fetch('./html/finalJuegoPerdio.html');
@@ -8,5 +9,14 @@ export async function cargarFinalJuegoPerdio() {
 }
 
 function eventosCargarFinalJuegoPerdio() {
+    const boton = document.querySelector('.buttonFinalP');
 
+    clickBtn(boton);
+}
+
+function clickBtn(btn) {
+    btn.addEventListener('click', () => {
+        obtenerVistas('reglas');
+        setPreguntasYaRealizadas([]);
+    });
 }

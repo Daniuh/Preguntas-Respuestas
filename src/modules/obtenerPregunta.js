@@ -59,3 +59,7 @@ export function getPreguntaRandom() {
 export function getPreguntasYaRealizadas() {
     return preguntasYaRealizadas;
 }
+
+export function setPreguntasYaRealizadas(array) {
+    preguntasYaRealizadas = array;
+}
