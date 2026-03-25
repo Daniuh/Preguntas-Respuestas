@@ -6,7 +6,7 @@ html, body {
 
 body {
     min-height: 100vh;
-    background-color: #b7ddff;
+    background-color: #DEEFE7;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -23,7 +23,7 @@ footer {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-decoration-line: none;
 
-    padding: 0.2rem;
+    padding: 0.5rem;
 
     border-radius: 5px;
 }

@@ -34,7 +34,7 @@ function verificarName(nameUsuario) {
 
     if (name == ''){ 
         const error = document.createElement('span');
-        error.textContent = 'Por favor ingrese un nombre';
+        error.textContent = '¡Por favor ingrese un nombre!';
         error.classList.add('nameVacio');
 
         nameUsuario.after(error);
@@ -50,7 +50,7 @@ function ocultarMensajeError(inputNombreUsuario) {
         if(mensajeError){
             mensajeError.classList.add('noMostrarMensaje');
         }
-    })
+    });
 }
 
 function verificarNameNoRepita(name) {

@@ -4,7 +4,7 @@
     align-items: center;
     flex-direction: column;
     
-    background-color: #64b7ff;
+    background-color: #002333;
     
     width: 100%;
     max-width: 500px;
@@ -18,11 +18,12 @@
 }
 
 .inicio:hover {
-    box-shadow: 0 0 10px #1592ff;
+    box-shadow: 0 0 10px #002333;
 }
 
 .h1Inicio {
-    padding-bottom: 1.4rem;
+    padding-bottom: 2rem;
+    color: white;
 }
 
 .divFormInicio {
@@ -40,17 +41,19 @@
 .labelInicio {
     padding-bottom: 0.6rem;
     font-size: clamp(0.9rem, 2.5vw, 1.1rem);
+    color: white;
 }
 
 .inputInicio {
-    background-color: #64b7ff;
+    background-color: #002333;
     border: none;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid white;
     border-radius: 2px;
 
     padding: 0.7rem 0.5rem 0.4rem 0.2rem;
     width: 100%;
     max-width: 200px;
+    margin-top: 0.5rem;
 
     font-size: 1rem;
 
@@ -62,7 +65,7 @@
 }
 
 .inputInicio::placeholder {
-    color: rgb(36, 37, 38);
+    color: white;
     font-size: 0.89rem;
 }
 
@@ -74,22 +77,26 @@
 }
 
 .buttonInicio {
-    margin-top: 0.65rem;
+    margin-top: 1.5rem;
     border: none;
     border-radius: 4px;
 
     min-width: 100px;
     min-height: 25px;
 
-    background-color: #ffde23b2;
-    color:rgb(0, 0, 0);
+    background-color: #159A9C;
+    color:black;
+
+    font-size: 1rem;
+
+    padding: 0.5rem 1rem;
 
     transition: background-color 0.5s ease, color 0.5s ease;
 }
 
 .buttonInicio:hover {
     background-color: rgb(232, 244, 244);
-    color: rgb(0, 0, 0);
+    color: black;
 
     cursor: pointer;
 }
@@ -99,7 +106,7 @@
 }
 
 .nameVacio {
-    color: rgb(179,0,0);
+    color: white;
 
     padding-top: 0.4rem;
 }
