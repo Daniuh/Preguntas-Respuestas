@@ -9,14 +9,20 @@ export async function cargarFinalJuegoPerdio() {
 }
 
 function eventosCargarFinalJuegoPerdio() {
-    const boton = document.querySelector('.buttonFinalP');
+    const botonVolverJugar      = document.querySelector('.buttonFinalP');
+    const botonSalir            = document.querySelector('.buttonSalirFinalP');
 
-    clickBtn(boton);
+    clickBtn(botonVolverJugar, botonSalir);
 }
 
-function clickBtn(btn) {
-    btn.addEventListener('click', () => {
+function clickBtn(btnVolverJugar, btnSalir) {
+    btnVolverJugar.addEventListener('click', () => {
         obtenerVistas('reglas');
+        setPreguntasYaRealizadas([]);
+    });
+
+    btnSalir.addEventListener('click', () => {
+        obtenerVistas('inicio');
         setPreguntasYaRealizadas([]);
     });
 }

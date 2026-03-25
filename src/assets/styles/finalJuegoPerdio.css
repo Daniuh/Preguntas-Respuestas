@@ -1,0 +1,97 @@
+.sectionFinalPerdio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    width: 100%;
+
+    background-color: #002333;
+
+    max-width: 1000px;
+    min-height: 400px;
+
+    border-radius: 1.5rem;
+}
+
+.sectionFinalPerdio:hover {
+    box-shadow: 0 0 10px #002333;
+}
+
+.divFinalPerdio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    margin: 1.5rem;
+}
+
+.h1FinalP {
+    color: white;
+
+    margin-bottom: 2rem;
+}
+
+.pFinalP {
+    color: white;
+
+    margin-bottom: 2rem;
+}
+
+.divButtonsFinalP {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+
+    margin-top: 1.5rem;
+}
+
+.buttonFinalP {
+    border: none;
+    border-radius: 4px;
+
+    min-width: 100px;
+    min-height: 25px;
+
+    background-color: #159A9C;
+    color:black;
+
+    font-size: 1rem;
+
+    padding: 0.5rem 1rem;
+
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.buttonFinalP:hover {
+    background-color: rgb(232, 244, 244);
+    color: black;
+
+    cursor: pointer;
+}
+
+.buttonSalirFinalP {
+    border: none;
+    border-radius: 4px;
+
+    min-width: 100px;
+    min-height: 25px;
+
+    background-color: #159A9C;
+    color:black;
+
+    font-size: 1rem;
+
+    padding: 0.5rem 1rem;
+
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.buttonSalirFinalP:hover {
+    background-color: rgb(232, 244, 244);
+    color: black;
+
+    cursor: pointer;
+}

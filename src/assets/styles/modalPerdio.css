@@ -25,7 +25,7 @@
 
     width: 100%;
 
-    background-color: #f5f3ff;
+    background-color: #002333;
 
     max-width: 750px;
     min-height: 250px;
@@ -37,6 +37,8 @@
     font-size: 2.2rem;
     margin-bottom: 1.5rem;
     margin-top: 0rem;
+
+    color: white;
 }
 
 .buttonPerdio {
@@ -54,16 +56,16 @@
 
     color:rgb(0, 0, 0);
 
-    background-color: #ddd6fe;
+    background-color: #159A9C;
     transition: background-color 0.5s ease, color 0.5s ease;
 
     cursor: pointer;
 }
 
 .buttonPerdio:hover {
-    background-color: #e9d5ff;
+    background-color: #B4BEC9;
 
-    min-width: 110px;
+    min-width: 105px;
     min-height: 25px;
 
     transition: min-width 0.1s ease, min-height 0.1s ease;

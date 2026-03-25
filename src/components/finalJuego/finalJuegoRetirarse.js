@@ -9,9 +9,8 @@ export async function cargarFinalJuegoRetirarse() {
 }
 
 function eventosFinalJuego() {
-    const botonVolverJugar = document.querySelector('.buttonJugarFinal');
+    const botonVolverJugar    = document.querySelector('.buttonJugarFinal');
     const botonRegresarInicio = document.querySelector('.buttonSalirFinal');
-
 
     clickBtnJugar(botonVolverJugar);
     clickBtnSalir(botonRegresarInicio);

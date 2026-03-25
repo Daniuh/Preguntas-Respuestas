@@ -1,5 +1,6 @@
 import modalHtml from '../../../public/html/modalOpcionUsuario.html?raw';
 import { obtenerPregunta, obtenerVistas } from '../../modules/index.js';
+import { getElementoJuego } from '../index.js';
 
 let modal;
 
@@ -11,17 +12,13 @@ export const ocultarModal = () => {
     modal?.classList.add('ocultarModal');
 }
 
-export const cargarModalOpcion = (elemento) => {
+export const cargarModalOpcion = () => {
     modal = document.createElement('section');
     modal.innerHTML = modalHtml;
     modal.className = 'modalOpciones';
 
-    elemento.append(modal);
+    getElementoJuego().append(modal);
 
-    eventosModal();
-}
-
-function eventosModal() {
     clicks();
 }
 
@@ -33,43 +30,44 @@ function clicks() {
     retirarse(retirarseButton);
 }
 
-function continuar(c, r) {
-    c.addEventListener('click', () => {
+function continuar(continuar, retirarse) {
+    continuar.addEventListener('click', () => {
         conteoRondas();
-        cambiarVistaModal(c, r);
+        cambiarVistaModal(continuar, retirarse);
     });
 }
 
-function retirarse(r) {
-    r.addEventListener('click', () => {
+function retirarse(retirarse) {
+    retirarse.addEventListener('click', () => {
         obtenerVistas('finalJuego');
     });
 }
 
-function cambiarVistaModal(c, r) {
+function cambiarVistaModal(continuar, retirarse) {
     const textoP  = document.querySelector('.pModal');
     const textoH1 = document.querySelector('.h1Modal');
 
     textoH1.innerText = 'Elige una opción primero';
     textoP.innerText  = 'Ahora escoge si deseas cambiar la categoría de la pregunta o continuar con la misma.';
 
-    r.classList.remove('buttonRetirarse');
-    r.classList.add('buttonContinuarMismoTipo');
-    c.innerText       = 'Cambiar tipo';
-    r.innerText       = 'Continuar con el mismo tipo';
+    retirarse.classList.remove('buttonRetirarse');
+    retirarse.classList.add('buttonContinuarMismoTipo');
 
-    cambiarTipo(c);
-    continuarConElMismo(r);
+    continuar.innerText       = 'Cambiar tipo';
+    retirarse.innerText       = 'Continuar con el mismo tipo';
+
+    cambiarTipo(continuar);
+    continuarConElMismo(retirarse);
 }
 
-function cambiarTipo(c) {
-    c.addEventListener('click', () => {
+function cambiarTipo(continuar) {
+    continuar.addEventListener('click', () => {
         obtenerVistas('tipo');
     })
 }
 
-function continuarConElMismo(r) {
-    r.addEventListener('click', () => {
+function continuarConElMismo(continuarMismoTipo) {
+    continuarMismoTipo.addEventListener('click', () => {
         const tipoActual = Number(localStorage.getItem('TipoActual'));
 
         obtenerVistas('juego');
@@ -78,8 +76,7 @@ function continuarConElMismo(r) {
 }
 
 function conteoRondas() {
-    let rondas = Number(localStorage.getItem('rondasUsuario')) || 0;
-    
+    let rondas = Number(localStorage.getItem('rondasUsuario')) || 0; 
     rondas++;
 
     const conteoGlobal = Number(localStorage.getItem('rondasUsuario'));

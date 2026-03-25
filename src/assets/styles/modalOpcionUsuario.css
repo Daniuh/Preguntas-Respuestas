@@ -25,7 +25,7 @@
 
     width: 100%;
 
-    background-color: #f5f3ff;
+    background-color: #DEEFE7;
 
     max-width: 800px;
     min-height: 250px;
@@ -40,7 +40,7 @@
 }
 
 .pModal {
-    font-size: 1.05rem;
+    font-size: 1.10rem;
     margin-bottom: 1.5rem;
 }
 
@@ -51,7 +51,7 @@
     padding-top: 0.65rem;
 
     max-width: 300px;
-    min-height: 100px;
+    min-height: 60px;
 }
 
 .buttonContinuar {
@@ -70,14 +70,14 @@
 
     color:rgb(0, 0, 0);
 
-    background-color: #ddd6fe;
+    background-color: #159A9C;
     transition: background-color 0.5s ease, color 0.5s ease;
 
     cursor: pointer;
 }
 
 .buttonContinuar:hover {
-    background-color: #e9d5ff;
+    background-color: #B4BEC9;
 
     min-width: 150px;
     min-height: 40px;
@@ -100,14 +100,14 @@
 
     color:rgb(0, 0, 0);
 
-    background-color: #ddd6fe;
+    background-color: #159A9C;
     transition: background-color 0.5s ease, color 0.5s ease;
 
     cursor: pointer;
 }
 
 .buttonRetirarse:hover {
-    background-color: #e9d5ff;
+    background-color: #B4BEC9;
 
     min-width: 150px;
     min-height: 40px;
@@ -134,14 +134,14 @@
 
     color:rgb(0, 0, 0);
 
-    background-color: #ddd6fe;
+    background-color: #159A9C;
     transition: background-color 0.5s ease, color 0.5s ease;
 
     cursor: pointer;
 }
 
 .buttonContinuarMismoTipo:hover {
-    background-color: #e9d5ff;
+    background-color: #B4BEC9;
 
     min-width: 250px;
     min-height: 40px;

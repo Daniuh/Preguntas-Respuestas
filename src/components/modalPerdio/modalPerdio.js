@@ -1,5 +1,6 @@
 import modalHtml from '../../../public/html/modalPerdio.html?raw';
 import { obtenerVistas } from '../../modules/index.js';
+import { getElementoJuego } from '../index.js';
 
 let modal;
 
@@ -11,12 +12,12 @@ export const ocultarModalPerdio = () => {
     modal?.classList.add('ocultarModalPerdio');
 }
 
-export const cargarModalPerdio = (elemento) => {
+export const cargarModalPerdio = () => {
     modal = document.createElement('section');
     modal.innerHTML = modalHtml;
     modal.className = 'modalPerdio';
 
-    elemento.append(modal);
+    getElementoJuego().append(modal);
 
     eventosModalPerdio();
 }
@@ -37,5 +38,5 @@ function imrpimirInfo(h1) {
 function clickBtn(btn) {
     btn.addEventListener('click', () => {
         obtenerVistas('finalJuegoPerdio');
-    })
+    });
 }
