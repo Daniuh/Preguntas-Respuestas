@@ -13,7 +13,7 @@
     align-items: center;
     flex-wrap: wrap;
 
-    background-color: #64b7ff;
+    background-color: #002333;
 
     width: 100%;
     max-width: 1220px;
@@ -23,7 +23,7 @@
 }
 
 .divElegirT:hover {
-    box-shadow: 0 0 10px #1592ff;
+    box-shadow: 0 0 10px #002333;
 }
 
 /*.h1ElegirT {}*/

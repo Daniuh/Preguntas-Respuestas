@@ -1,18 +1,12 @@
 import { pintarRespuesta } from '../index.js';
 
-export function verificarRespuesta(respuesta, elemento) {
+export function verificarRespuesta(respuesta) {
     const opciones = document.querySelectorAll('.opcion');
 
-    listeners(opciones, respuesta, elemento);
+    validarOpcionSelec(opciones, respuesta);
 }
 
-function listeners(opciones, opCorrecta, elemento) {
-    console.log(opCorrecta);
-
-    validarOpcionSelec(opciones, opCorrecta, elemento);
-}
-
-function validarOpcionSelec(opcion, respuesta, elemento) {
+function validarOpcionSelec(opcion, respuesta) {
     opcion.forEach(opcion => {
         opcion.addEventListener('click', () => {
             const indice = Number(opcion.dataset.indice);
@@ -22,11 +16,11 @@ function validarOpcionSelec(opcion, respuesta, elemento) {
             if(indice === respuesta){
                 esCorrectaResp;
 
-               return pintarRespuesta(esCorrectaResp, indice, respuesta, elemento);
+               return pintarRespuesta(esCorrectaResp, indice, respuesta);
             } else {
                 esCorrectaResp = !esCorrectaResp; 
 
-                return pintarRespuesta(esCorrectaResp, indice, respuesta, elemento);
+                return pintarRespuesta(esCorrectaResp, indice, respuesta);
             }
         });
     });

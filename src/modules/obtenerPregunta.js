@@ -23,19 +23,15 @@ function elegirPreguntaAlea(preguntaFiltro) {
         return;
     }
 
-    generarPreguntaRandom(preguntaFiltro);
-}
+    const randomIndex = Math.floor(Math.random() * preguntaFiltro.length);
+    preguntaRandom = preguntaFiltro[randomIndex];
 
-function generarPreguntaRandom(preguntaF) {
-    const randomIndex = Math.floor(Math.random() * preguntaF.length);
-    preguntaRandom = preguntaF[randomIndex];
-
-    verificarPreguntaNoRepita(preguntaRandom, preguntaF);
+    verificarPreguntaNoRepita(preguntaRandom, preguntaFiltro);
 }
 
 function verificarPreguntaNoRepita(preguntaA, preguntaFiltro) {
     if(preguntasYaRealizadas.includes(preguntaA.id)) {
-      generarPreguntaRandom(preguntaFiltro);
+      elegirPreguntaAlea(preguntaFiltro);
     }else {
         preguntasYaRealizadas.push(preguntaA.id);
         pregunta  = preguntaA.pregunta;

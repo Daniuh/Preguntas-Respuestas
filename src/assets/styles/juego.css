@@ -6,7 +6,7 @@
 
     width: 100%;
 
-    background-color: #5c98cd;
+    background-color: #002333;
 
     max-width: 1000px;
     min-height: 400px;
@@ -25,7 +25,7 @@
     padding: 1rem;
     border-radius: 0.5rem;
 
-    background-color: #ffffffa6;
+    background-color: #ffffffe6;
     
     font-size: 2rem;
 
@@ -40,7 +40,7 @@
     padding: 1rem;
     border-radius: 0.5rem;
 
-    background-color: #ffffffa6;
+    background-color: #ffffffe6;
     
     font-size: 2rem;
 
@@ -48,12 +48,6 @@
     margin-left: 1rem;
     margin-right: 3rem;
     margin-bottom: 3.5rem;
-}
-
-.divUlLiJuego {
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .ulJuego {
@@ -70,7 +64,7 @@
     justify-content: center;
     align-items: center;
 
-    background-color: #ffffffa0;
+    background-color: #ffffffe6;
 
     min-width: 400px;
     min-height: 100px;

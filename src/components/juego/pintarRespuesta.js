@@ -1,20 +1,12 @@
-import { cargarModalOpcion } from '../index.js';
-import { cargarModalPerdio } from '../index.js';
+import { cargarModalOpcion, cargarModalPerdio, getElementoJuego } from '../index.js';
 
-export function pintarRespuesta(esCorrecta, opcion, respuesta, elemento) {
-    console.log(esCorrecta, opcion, respuesta);
-
-    pintarRespuestaCorrectaUsuario(esCorrecta, respuesta, opcion, elemento);
-}
-
-function pintarRespuestaCorrectaUsuario(resultEleccion, respuestaCorrecta, op, elemento) {
-
-    if (resultEleccion) {
-        eleccionCorrecta(respuestaCorrecta);
-        cargarModalOpcion(elemento);
+export function pintarRespuesta(esCorrecta, opcion, respuesta) {
+    if (esCorrecta) {
+        eleccionCorrecta(respuesta);
+        cargarModalOpcion();
     } else {
-        eleccionIncorrecta(respuestaCorrecta, op);
-        cargarModalPerdio(elemento);
+        eleccionIncorrecta(respuesta, opcion);
+        cargarModalPerdio();
     }
 }
 
@@ -25,8 +17,12 @@ function eleccionCorrecta(respuestaCorrecta)  {
     htmlRespuestaC.classList.add('respuestaCorrecta');
     htmlRespuestaC.classList.remove('opcion');
 
-    let puntosGanados  = 50;
-    let puntosActuales = Number(localStorage.getItem('puntajeUsuario'));
+    sumarPuntaje(puntos);
+}
+
+function sumarPuntaje(puntos) {
+    const puntosGanados  = 50;
+    const puntosActuales = Number(localStorage.getItem('puntajeUsuario'));
 
     const totalPuntos = puntosActuales + puntosGanados;
     localStorage.setItem('puntajeUsuario', totalPuntos);
@@ -44,7 +40,11 @@ function eleccionIncorrecta(respuestaCorrecta, op) {
         htmlRespuestaI.classList.remove('opcion');
         htmlRespuestaI.classList.add('respuestaIncorrecta');
 
-        localStorage.setItem('puntajeUsuario', 0);
-        const puntosPerdidos = localStorage.getItem('puntajeUsuario');
-        puntos.innerText = puntosPerdidos;
+        quitarPuntaje(puntos);
+}
+
+function quitarPuntaje(puntos) {
+    localStorage.setItem('puntajeUsuario', 0);
+    const puntosPerdidos = localStorage.getItem('puntajeUsuario');
+    puntos.innerText = puntosPerdidos;
 }

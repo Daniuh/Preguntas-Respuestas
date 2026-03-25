@@ -1,10 +1,12 @@
 import { obtenerVistas, getPregunta, getRespuesta, getPreguntaRandom } from '../../modules/index.js'; 
 import { verificarRespuesta } from '../index.js';
 
+let elemento;
+
 export async function cargarJuego() {
     const respuesta = await fetch('html/juego.html');
     const inicio = await respuesta.text();
-    const elemento = document.getElementById('appCargado');
+    elemento = document.getElementById('appCargado');
 
     elemento.innerHTML = inicio;
 
@@ -13,24 +15,24 @@ export async function cargarJuego() {
 
 function eventosJuegos(elemento) {
     const preguntaH1 = document.querySelector('.h1Juego');
-    const preguntas  = document.querySelectorAll('.preguntas');
+    const opciones   = document.querySelectorAll('.preguntas');
     const puntaje    = document.querySelector('.pJuego');
 
     if(!getPregunta()){
       return obtenerVistas('tipo'); 
     }
 
-    flujoJuego(preguntaH1, getPregunta(), preguntas, puntaje, getRespuesta(), elemento);
+    flujoJuego(preguntaH1, getPregunta(), opciones, puntaje, getRespuesta(), elemento);
 }
 
-function flujoJuego(preguntaH1, pregunta, preguntas, puntaje, respuesta, elemento) {
+function flujoJuego(preguntaH1, pregunta, opciones, puntaje, respuesta, elemento) {
     pintarPregunta(preguntaH1, pregunta);
-    pintarRespuestas(preguntas);
+    pintarOpciones(opciones);
 
     iniciarPuntaje();
     pintarPuntaje(puntaje);
 
-    verificarRespuesta(respuesta, elemento);
+    verificarRespuesta(respuesta);
     
 }
 
@@ -38,11 +40,11 @@ function pintarPregunta(preguntaH1, pregunta) {
     preguntaH1.innerText = pregunta;
 }
 
-function pintarRespuestas(preguntas) {
-    preguntas.forEach(preguntas => {
-        const indice = Number(preguntas.dataset.indice);
+function pintarOpciones(opciones) {
+    opciones.forEach(opciones => {
+        const indice = Number(opciones.dataset.indice);
 
-        preguntas.innerText = getPreguntaRandom().opciones[indice];
+        opciones.innerText = getPreguntaRandom().opciones[indice];
     });
 }
 
@@ -56,4 +58,8 @@ function pintarPuntaje(pPuntaje) {
     const puntaje = localStorage.getItem('puntajeUsuario');
 
     pPuntaje.innerText = puntaje;
+}
+
+export function getElementoJuego() {
+    return elemento;
 }

@@ -1,7 +1,7 @@
 export {cargarInicio} from './inicio/inicio.js';
 export {cargarReglas} from './reglas/reglas.js';
 export {cargarTipo} from './elegirTipo/elegirTipo.js';
-export {cargarJuego} from './juego/juego.js';
+export {cargarJuego, getElementoJuego} from './juego/juego.js';
 export {verificarRespuesta} from './juego/verificarRespuesta.js';
 export {pintarRespuesta} from './juego/pintarRespuesta.js';
 export {cargarModalOpcion} from './modalOpcionUsuario/modalOpcionUsuario.js';
