@@ -1,4 +1,4 @@
-import { obtenerVistas } from '../../modules/index.js';
+import { obtenerVistas, setPreguntasYaRealizadas } from '../../modules/index.js';
 
 export async function cargarReglas() {
     const respuesta = await fetch('html/reglas.html');
@@ -27,7 +27,10 @@ function regresar(buttonR) {
 function continuar(buttonC) {
     buttonC.addEventListener('click', () => {
         obtenerVistas('tipo');
+
         localStorage.setItem('rondasUsuario', 1);
         localStorage.setItem('puntajeUsuario', 0);
+        
+        setPreguntasYaRealizadas([]);
     });
 }
