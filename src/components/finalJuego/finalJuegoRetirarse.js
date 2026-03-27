@@ -11,10 +11,12 @@ export async function cargarFinalJuegoRetirarse() {
 function eventosFinalJuego() {
     const botonVolverJugar    = document.querySelector('.buttonJugarFinal');
     const botonRegresarInicio = document.querySelector('.buttonSalirFinal');
+    const puntajeFinal         = document.getElementById('puntajeFinal');
+    const preguntasRespondidas  = document.getElementById('preguntasRespondidas');
 
     clickBtnJugar(botonVolverJugar);
     clickBtnSalir(botonRegresarInicio);
-    mostrarResultados();
+    mostrarResultados(puntajeFinal, preguntasRespondidas);
 }
 
 function clickBtnJugar(btn) {
@@ -31,7 +33,7 @@ function clickBtnSalir(btn) {
     });
 }
 
-function mostrarResultados() {
-    console.log(getPreguntasYaRealizadas());
-    console.log(getPreguntas());
+function mostrarResultados(puntajeFinal, preguntasRespondidas) {
+    puntajeFinal.innerText = localStorage.getItem('puntajeUsuario');
+
 }

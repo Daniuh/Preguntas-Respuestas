@@ -28,5 +28,6 @@ function continuar(buttonC) {
     buttonC.addEventListener('click', () => {
         obtenerVistas('tipo');
         localStorage.setItem('rondasUsuario', 1);
+        localStorage.setItem('puntajeUsuario', 0);
     });
 }
