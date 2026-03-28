@@ -6,7 +6,7 @@
 
     width: 100%;
 
-    background-color: #5c98cd;
+    background-color: #002333;
 
     max-width: 1000px;
     min-height: 400px;
@@ -28,24 +28,70 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
-    margin-bottom: 3rem;
 }
 
 .h1FinalJ {
-    margin: 1.5rem;
     padding: 1rem;
     border-radius: 0.5rem;
 
-    font-size: 2rem;
+    font-size: 2.5rem;
 
-    margin-top: 3rem;
+    margin-top: 1rem;
     margin-left: 3rem;
     margin-right: 3rem;
     margin-bottom: 0.5rem;
+
+    color: white;
 }
 
 .pFinalJ {
+    border-radius: 0.5rem;
+
+    font-size: 1.8rem;
+
+    margin-top: 0.5rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-bottom: 0.1rem;
+
+    color: white;
+}
+
+.puntajeFinalJ {
+    border-radius: 0.5rem;
+
+    font-size: 1.8rem;
+
+    margin-top: 0.5rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-bottom: 4rem;
+
+    color: white;
+}
+
+.tablaPreguntas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.pTablaFinalJ{
+    padding: 1rem;
+    border-radius: 0.5rem;
+
+    font-size: 1.8rem;
+
+    margin-top: 0.5rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-bottom: 1.5rem;
+
+    color: white;
+}
+
+.tablaFinalJ {
     margin: 1.5rem;
     padding: 1rem;
     border-radius: 0.5rem;
@@ -56,6 +102,8 @@
     margin-left: 3rem;
     margin-right: 3rem;
     margin-bottom: 1.5rem;
+
+    color: white;
 }
 
 .divBtnFinalJ {
