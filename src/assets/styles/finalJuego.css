@@ -91,11 +91,6 @@
     color: white;
 }
 
-.resumenRespuestas:hover {
-    color: #ddd6fe;
-    cursor: pointer;
-}
-
 .tablaFinalJ {
     margin: 1.5rem;
     padding: 1rem;

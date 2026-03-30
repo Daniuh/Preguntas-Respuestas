@@ -42,5 +42,14 @@ function mostrarResultados(puntajeFinal) {
 }
 
 function pintarTablaResultados(preguntas) {
-    
+    const pregunta = preguntas.pregunta;
+    const respuestaCorrecta = preguntas.respuesta;
+    const tuRespuesta = '';
+
+    const html = `
+    <tr>
+        <th>${pregunta}</th>
+        <th>${respuestaCorrecta}</th>
+        <th>${tuRespuesta}</th>
+    </tr>`;
 }
