@@ -9,14 +9,13 @@ export async function cargarFinalJuegoRetirarse() {
 }
 
 function eventosFinalJuego() {
-    const botonVolverJugar    = document.querySelector('.buttonJugarFinal');
-    const botonRegresarInicio = document.querySelector('.buttonSalirFinal');
+    const botonVolverJugar     = document.querySelector('.buttonJugarFinal');
+    const botonRegresarInicio  = document.querySelector('.buttonSalirFinal');
     const puntajeFinal         = document.getElementById('puntajeFinal');
-    const preguntasRespondidas  = document.getElementById('preguntasRespondidas');
 
     clickBtnJugar(botonVolverJugar);
     clickBtnSalir(botonRegresarInicio);
-    mostrarResultados(puntajeFinal, preguntasRespondidas);
+    mostrarResultados(puntajeFinal);
 }
 
 function clickBtnJugar(btn) {
@@ -33,7 +32,15 @@ function clickBtnSalir(btn) {
     });
 }
 
-function mostrarResultados(puntajeFinal, preguntasRespondidas) {
+function mostrarResultados(puntajeFinal) {
     puntajeFinal.innerText = localStorage.getItem('puntajeUsuario');
 
+    const preguntasYaRealizadas = getPreguntasYaRealizadas();
+    const preguntasFiltradas    = getPreguntas().filter(pregunta => preguntasYaRealizadas.includes(pregunta.id));
+
+    pintarTablaResultados(preguntasFiltradas);
+}
+
+function pintarTablaResultados(preguntas) {
+    
 }

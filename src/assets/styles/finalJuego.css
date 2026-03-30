@@ -86,9 +86,14 @@
     margin-top: 0.5rem;
     margin-left: 3rem;
     margin-right: 3rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 0rem;
 
     color: white;
+}
+
+.resumenRespuestas:hover {
+    color: #ddd6fe;
+    cursor: pointer;
 }
 
 .tablaFinalJ {
@@ -102,6 +107,50 @@
     margin-left: 3rem;
     margin-right: 3rem;
     margin-bottom: 1.5rem;
+
+    color: white;
+
+}
+
+.thPregunta {
+    padding: 0.5rem;
+
+    font-size: 1.8rem;
+
+    margin-top: 0rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-bottom: 0.5rem;
+
+    color: white;
+
+    border-right: #ddd6fe 0.2rem solid;
+}
+
+.thRespuesta {
+    padding: 0.5rem;
+
+    font-size: 1.8rem;
+
+    margin-top: 0rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-bottom: 0.5rem;
+
+    color: white;
+
+    border-right: #ddd6fe 0.2rem solid;
+}
+
+.thRespuestaCorrecta {
+    padding: 0.5rem;
+
+    font-size: 1.8rem;
+
+    margin-top: 0rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-bottom: 0.5rem;
 
     color: white;
 }
