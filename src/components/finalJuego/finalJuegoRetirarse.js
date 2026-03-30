@@ -42,14 +42,19 @@ function mostrarResultados(puntajeFinal) {
 }
 
 function pintarTablaResultados(preguntas) {
-    const pregunta = preguntas.pregunta;
-    const respuestaCorrecta = preguntas.respuesta;
-    const tuRespuesta = '';
+    const tabla = document.querySelector('.trFinal');
 
-    const html = `
-    <tr>
-        <th>${pregunta}</th>
-        <th>${respuestaCorrecta}</th>
-        <th>${tuRespuesta}</th>
-    </tr>`;
+    preguntas.forEach(p => {
+        const pregunta = p.pregunta;
+        const respuestaCorrecta = p.opciones[p.respuesta];
+
+        const tr = document.createElement('tr');
+    
+        tr.innerHTML = `
+            <td class="tdPregunta">${pregunta}</td>
+            <td class="tdRespuesta">${respuestaCorrecta}</td>
+        `;
+
+        tabla.appendChild(tr);
+});
 }

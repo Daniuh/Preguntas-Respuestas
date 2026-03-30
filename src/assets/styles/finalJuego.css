@@ -8,10 +8,14 @@
 
     background-color: #002333;
 
-    max-width: 1000px;
+    max-width: 1200px;
     min-height: 400px;
 
     border-radius: 1.5rem;
+
+    margin-top: 1rem;
+
+    padding: 1.5rem;
 }
 
 .divPrincipalFinalJ {
@@ -19,8 +23,6 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
-    margin: 1.5rem;
 }
 
 .divH1PFinalJ {
@@ -107,6 +109,13 @@
 
 }
 
+.tHeadFinal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 .thPregunta {
     padding: 0.5rem;
 
@@ -148,6 +157,53 @@
     margin-bottom: 0.5rem;
 
     color: white;
+}
+
+.tdPregunta {
+    padding: 0.5rem;
+
+    font-size: 1.8rem;
+
+    margin-top: 0rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-bottom: 0.5rem;
+
+    color: white;
+
+    border-right: #ddd6fe 0.2rem solid;
+    border-top: #ddd6fe 0.2rem solid;
+}
+
+.tdRespuesta {
+    padding: 0.5rem;
+
+    font-size: 1.8rem;
+
+    margin-top: 0rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-bottom: 0.5rem;
+
+    color: white;
+
+    border-right: #ddd6fe 0.2rem solid;
+    border-top: #ddd6fe 0.2rem solid;
+}
+
+.tdRespuestaCorrecta {
+    padding: 0.5rem;
+
+    font-size: 1.8rem;
+
+    margin-top: 0rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-bottom: 0.5rem;
+
+    color: white;
+
+    border-top: #ddd6fe 0.2rem solid;
 }
 
 .divBtnFinalJ {
